@@ -1,0 +1,103 @@
+.content {
+  margin: 72px 0;
+}
+
+.content u {
+  cursor: pointer;
+}
+
+@screen md {
+  .content {
+    margin: 156px 0;
+  }
+}
+
+.content .centeredTitle {
+  color: var(--white);
+  margin-bottom: 56px;
+  width: 100vw;
+  font-weight: 700;
+  text-align: center;
+}
+
+@screen md {
+  .content .centeredTitle {
+    width: 626px;
+    margin-bottom: 80px;
+  }
+}
+
+.content .register {
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.content .register .sing_in {
+  margin-left: 8px;
+  color: #249888;
+}
+
+@screen md {
+  .content .register {
+    padding: 80px;
+  }
+}
+
+.content .register h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  width: 258px;
+}
+
+.content .register h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  width: 70vw;
+  max-width: 440px;
+}
+
+.content .register h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  width: 250px;
+  height: 60px;
+}
+
+.content .register form .state.error .writeplace {
+  border-color: #ef4444;
+}
+
+.content .register form input {
+  padding: 16px 14px;
+}
+
+.content .register form input:focus {
+  outline: 3px solid #249888;
+  border: 2px solid rgba(22, 22, 22, 0.6);
+  -webkit-font-smoothing: antialiased;
+}
+
+.content .register form label {
+  font-size: 18px;
+}
+
+.content .register form button {
+  padding: 14px 32px;
+  border-radius: 96px;
+}
+
+.content .register form .terms {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@screen md {
+  .content .register form .terms {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

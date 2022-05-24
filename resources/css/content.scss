@@ -1,0 +1,82 @@
+.content {
+    u {
+        cursor: pointer;
+    }
+    margin: 72px 0;
+    @screen md {
+        margin: 156px 0;
+    }
+    .centeredTitle {
+        color: var(--white);
+        margin-bottom: 56px;
+        width: 100vw;
+        font-weight: 700;
+        text-align: center;
+        @screen md {
+            width: 626px;
+            margin-bottom: 80px;
+        }
+    }
+    .register {
+        .sing_in {
+            margin-left: 8px;
+            color: #249888;
+        }
+        padding: 32px;
+        border-radius: 12px;
+        @screen md {
+            padding: 80px;
+        }
+        h2 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            width: 258px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            width: 70vw;
+            max-width: 440px;
+        }
+        h4 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            width: 250px;
+            height: 60px;
+        }
+        form {
+            .state.error {
+                .writeplace {
+                    border-color: rgba(239, 68, 68, 1);
+                }
+            }
+            input {
+                padding: 16px 14px;
+                &:focus {
+                    outline: 3px solid #249888;
+                    border: 2px solid rgba(22, 22, 22, 0.6);
+                    -webkit-font-smoothing: antialiased;
+                }
+            }
+            label {
+                font-size: 18px;
+            }
+            button {
+                padding: 14px 32px;
+                border-radius: 96px;
+            }
+            .terms {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 20px;
+                @screen md {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

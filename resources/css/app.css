@@ -1,0 +1,66 @@
+@import "./hero.css";
+@import "./content.css";
+@import "./select.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --white: white;
+    --backgroundblack: #15182B;
+    --g550: #838389;
+    --desc: #5E678C;
+    --mh: 1200px;
+}
+
+@screen md {
+     :root {
+        --mh: 880px;
+    }
+}
+
+.comeInOpacity {
+    animation: comeInOpacity .5s linear;
+}
+
+.comUp {
+    animation: comUp 1s linear;
+}
+
+.comDown1 {
+    animation: comDown 1s linear;
+}
+
+.comDown2 {
+    animation: comDown 2s linear;
+}
+
+.comDown3 {
+    animation: comDown 3s linear;
+}
+
+@keyframes comeInOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes comUp {
+    from {
+        transform: translateY(20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes comDown {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}

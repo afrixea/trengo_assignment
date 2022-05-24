@@ -1,0 +1,235 @@
+.hero {
+    .container {
+        min-height: var(--mh);
+        >.grid.relative {
+            margin-left: 16px;
+            @screen md {
+                margin-left: 10px;
+            }
+            @screen xl {
+                margin-left: 122px;
+            }
+        }
+    }
+    &.white_background {
+        background: linear-gradient(335deg, #e3e5f0 37%, rgba(255, 255, 255, 1) 42.17%);
+    }
+    .logo {
+        margin-bottom: 32px;
+        .watchup {
+            margin-top: 48px;
+            width: 64px;
+            height: 64px;
+            @screen md {
+                margin-top: 85px;
+            }
+        }
+        ._logo {
+            margin-top: 24px;
+            @screen md {
+                margin-top: 56px;
+            }
+        }
+    }
+    .double_col {
+        .grid {
+            min-height: calc(var(--mh) - 200px);
+            @screen md {
+                min-height: calc(var(--mh) - 261px);
+            }
+        }
+    }
+    .hero_left {
+        height: 390px;
+        margin-bottom: 62px;
+        @screen md {
+            height: auto;
+            margin-bottom: 0;
+        }
+        h1.hero_title {
+            width: 90vw;
+            @screen md {
+                margin-top: 32px;
+                width: 100%;
+                position: relative;
+                z-index: 100;
+            }
+            @screen xl {
+                margin-top: 32px;
+                width: 100%;
+                position: unset;
+                background: unset;
+            }
+        }
+        .description {
+            width: 90vw;
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 24px;
+            padding-right: 20px;
+            @screen md {
+                padding-right: 0;
+                width: 100%;
+                margin-top: 25px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+        button {
+            padding: 23px 32px;
+            border-radius: 96px;
+            width: 100%;
+            max-width: 337px;
+            height: 64px;
+            align-items: center;
+            line-height: 1;
+        }
+        .btn-desc {
+            width: 100%;
+            max-width: 337px;
+            text-align: center;
+        }
+    }
+    .hero_right {
+        overflow: hidden;
+        bottom: 70px;
+        right: 7%;
+        width: 107%;
+        @screen md {
+            bottom: 200px;
+            left: 10vw;
+            width: 47vw;
+        }
+        @screen xl {
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+        }
+        .chat {
+            .back_ {
+                height: 547px;
+                img {
+                    @screen osm {
+                        display: none;
+                    }
+                }
+            }
+            .cross {
+                position: absolute;
+                bottom: 30px;
+                left: 90px;
+                width: 30px;
+            }
+            .message_ {
+                .speech {
+                    padding: 7px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    width: 215px;
+                    @screen md {
+                        padding: 12px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        width: 285px;
+                    }
+                }
+            }
+            .pc {
+                @screen osm {
+                    top: -70px;
+                    position: absolute;
+                    right: 10vw;
+                    width: 380px;
+                }
+                .avatar {
+                    @screen osm {
+                        display: none;
+                    }
+                }
+                .status {
+                    @screen osm {
+                        display: none;
+                    }
+                }
+            }
+            .mobile {
+                height: 210px;
+                width: 99vw;
+                top: 230px;
+                right: 1vw;
+                display: grid;
+                align-items: center;
+                justify-items: stretch;
+                @screen md {
+                    display: none;
+                }
+                .message_ {
+                    .speech {
+                        width: calc(100vw - 121px);
+                    }
+                }
+                .avatar {
+                    width: 34px;
+                    margin: 10px;
+                    .status {
+                        top: 23px;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .sponsors {
+        right: 6vw;
+        bottom: 45px;
+        @screen osm {
+            right: 5vw;
+        }
+        @screen md {
+            right: unset;
+            width: 100%;
+            bottom: 50px;
+        }
+        h4 {
+            margin-bottom: 18px;
+            font-weight: 500;
+            font-size: 3.5vw;
+            line-height: 24px;
+            color: #828cae;
+            @screen md {
+                margin-bottom: 24px;
+                font-size: 14px;
+            }
+        }
+        .items-center {
+            img {
+                &:nth-child(6),
+                &:nth-child(5),
+                &:nth-child(4) {
+                    display: none;
+                }
+                margin: 0 12px;
+                @screen md {
+                    margin: 0 16px;
+                    &:nth-child(6) {
+                        display: none;
+                    }
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        display: block;
+                    }
+                }
+                @screen xl {
+                    &:nth-child(6),
+                    &:nth-child(5),
+                    &:nth-child(4) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
