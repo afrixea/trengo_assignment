@@ -4,7 +4,6 @@
 ```
 ```
 # Logic tailwing is applying the grid and flex - position and some custom multiple used variables 
-```
 # and the custom elements that needs specific sizes etc are writen in SCSS and generated in a css file that the tailwing-laravel is reading 
 # database name trengo
 ## step2
@@ -23,6 +22,6 @@
  ### /api/Reg/delete_account/id delete
  ```
 
- ![desktop](https://github.com/afrixea/ArisCodeChallenge/blob/a0f0b660a96c40b89f01d102b18f8dc29f96a32a/a.jpg)
-
-![mobile](https://github.com/afrixea/ArisCodeChallenge/blob/a0f0b660a96c40b89f01d102b18f8dc29f96a32a/b.jpg)
+ ![desktop](https://github.com/afrixea/trengo_assignment/blob/78ec503c1d50b775af24006fc786eca19b20fd2c/Screenshot_1.jpg)
+  ![desktop](https://github.com/afrixea/trengo_assignment/blob/78ec503c1d50b775af24006fc786eca19b20fd2c/Screenshot_2.jpg)
+ 
